@@ -1,175 +1,369 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Roshan</title>
-    <link rel="icon" href="assets/R.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Roshan Mallick — CSE student, developer, and security researcher. Building things for the web, breaking things for fun.">
+<meta property="og:title" content="Roshan Mallick">
+<meta property="og:description" content="Developer & Public Learner based in Kolkata, West Bengal.">
+<title>Roshan</title>
+<link rel="icon" href="assets/R.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
- <body>
+<!-- ═══ LEFT SIDEBAR: progress bar + section list ═══ -->
+<div id="left-sidebar">
+  <div id="scroll-progress-track">
+    <div id="scroll-progress-bar"></div>
+  </div>
+  <nav id="section-list">
+    <a href="#hero"     class="sec-link" data-section="hero">hero</a>
+    <a href="#about"    class="sec-link" data-section="about">about</a>
+    <a href="#projects" class="sec-link" data-section="projects">projects</a>
+    <a href="#skills"   class="sec-link" data-section="skills">skills</a>
+    <a href="#journey"  class="sec-link" data-section="journey">journey</a>
+    <a href="#contact"  class="sec-link" data-section="contact">contact</a>
+  </nav>
+</div>
 
- <nav class="navbar">
-    <div class="scan-line"></div>
-    <div class="brand">
-        <div class="brand-icon">&#9658;</div>
-        <div class="brand-text">DEV_PORTFOLIO</div>
-    </div>
-    <div class="nav-links">
-        <div class="nav-link active">ROOT</div>
-        <div class="nav-link">PROJECTS</div>
-        <div class="nav-link">SKILLS</div>
-      <button class="nav-cta">CONTACT.EXE</button>
-    </div>
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">rm<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#journey">journey</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <a href="https://github.com/Roshan-Mallick" target="_blank" class="nav-cta">github ↗</a>
 </nav>
 
-    <div class="container">
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><span>Available for opportunities</span></div>
+    <h1 class="hero-name">Roshan<br><span class="dim">Mallick</span></h1>
+    <p class="hero-desc">
+      CSE student at <strong>Techno India University</strong>, Kolkata. I build things for the web and break things for fun —
+      mostly chasing bugs in systems others haven't looked at closely enough.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        View Projects
+      </a>
+      <a href="#contact" class="btn-ghost">Get in touch →</a>
+    </div>
+  </div>
+  <div class="hero-scroll">scroll</div>
+</section>
 
-        <h1 id="userName">Roshan Mallick</h1>
-
-        <div class="terminalBox">
-
-            <p class="whoami">&gt WHOAMI</p>
-
-            <p class="description">
-                B.Tech CSE student at Techno India University passionate about technology,
-                 problem-solving, and continuous learning. Always curious, always building,
-                  and constantly exploring new things.
-            </p>
-
-            <div class="cursor"></div>
-
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">01 — about</div>
+      <h2 class="section-title">Who I am</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-grid fade-in">
+      <div class="about-text">
+        <p>I'm a first-year CS student at Techno India University, Kolkata. I got into programming
+          through curiosity and stayed because of the problem-solving. These days I split my time
+          between <strong>building CLI tools and web projects</strong>, learning systems internals,
+          and exploring bug bounty research on the side.</p>
+        <p>My current focus sits at the intersection of <strong>security and software</strong> —
+          understanding how applications are built well enough to know where they break. I'm learning
+          in public, sharing what I find, and building things that actually matter to me.</p>
+        <p>When I'm not at a terminal, I'm reading writeups, working through DSA problems in C,
+          or building tools to solve problems I actually have. Based in Kolkata, West Bengal —
+          learning out loud, one commit at a time.</p>
+        <div class="about-interests">
+          <span class="tag">bug bounty</span>
+          <span class="tag">web security</span>
+          <span class="tag">public learning</span>
+          <span class="tag">linux</span>
+          <span class="tag">CLI tools</span>
+          <span class="tag">GSoC</span>
         </div>
+      </div>
+      <div class="about-sidebar">
+        <div class="about-stat">
+          <div class="num">B.Tech</div>
+          <div class="label">CSE · Techno India University</div>
+        </div>
+        <div class="about-stat">
+          <div class="num">KOL</div>
+          <div class="label">Kolkata, West Bengal, India</div>
+        </div>
+        <div class="about-stat">
+          <div class="num">↗</div>
+          <div class="label">Building & learning in public</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROJECTS ═══════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">02 — projects</div>
+      <h2 class="section-title">Things I've built</h2>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="container projects-container">
+    <div class="projects-grid fade-in">
+
+      <a class="project-card" href="https://github.com/Roshan-Mallick/RentDB" target="_blank">
+        <div class="project-top">
+          <span class="project-number">001</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-status live">live</div>
+        <div class="project-title">RentDB — CLI Rent Management System</div>
+        <p class="project-desc">A CLI tool built in C to manage rent payment entries and export them into a properly organized CSV. Came out of a real frustration — doing the same Excel work every month was slow. Added Google Drive auto-sync on Linux so data never gets lost.</p>
+        <div class="project-highlights">
+          <span class="highlight">CRUD operations</span>
+          <span class="highlight">CSV export</span>
+          <span class="highlight">Google Drive sync</span>
+          <span class="highlight">Makefile build</span>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">C</span>
+          <span class="project-tag">Linux</span>
+          <span class="project-tag">CLI</span>
+          <span class="project-tag">File I/O</span>
+          <span class="project-tag">Makefile</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://roshan-mallick.github.io" target="_blank">
+        <div class="project-top">
+          <span class="project-number">002</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-status live">live</div>
+        <div class="project-title">Developer Portfolio</div>
+        <p class="project-desc">This site. Minimal dark aesthetic, built from scratch with plain HTML, CSS, and JS — no frameworks, no templates. Deployed on GitHub Pages. Designed to feel like something a real developer built for themselves.</p>
+        <div class="project-highlights">
+          <span class="highlight">GitHub Pages</span>
+          <span class="highlight">zero dependencies</span>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">GitHub Pages</span>
+        </div>
+      </a>
 
     </div>
- 
+  </div>
+</section>
 
-    <!-- Skills Section -->
-<section class="skills-section">
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">03 — skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="container skills-container">
+    <div class="skills-grid fade-in">
 
-    <div class="skills-grid">
-
-        <!-- Group 1: Languages -->
-        <div class="skill-group">
-            <div class="group-header">
-                <h2 class="group-title">Languages</h2>
-                <span class="skill-count">4 skills</span>
-            </div>
-            <p class="group-desc">Core languages I write and build with.</p>
-            <div class="skill-items">
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/languages/html5.svg" alt="html5" class="html5-logo"></span>
-                    <span class="skill-name">HTML</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/languages/css.svg" alt="css3" class="css3-logo"></span>
-                    <span class="skill-name">CSS</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/languages/js.png" alt="javascript" class="js-logo"></span>
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/languages/c.png" alt="c" class="c-logo"></span>
-                    <span class="skill-name">C</span>
-                </div>
-            </div>
+      <!-- Languages: real PNGs from assets/languages/ -->
+      <div class="skill-group">
+        <div class="skill-group-name">Languages</div>
+        <div class="skill-list">
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/languages/c.png" alt="C"></div>C
+          </div>
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/languages/html5.svg" alt="HTML5"></div>HTML
+          </div>
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/languages/css.svg" alt="CSS3"></div>CSS
+          </div>
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/languages/js.png" alt="JavaScript"></div>JavaScript
+          </div>
         </div>
+      </div>
 
-        <!-- Group 2: Tools & Editors -->
-        <div class="skill-group">
-            <div class="group-header">
-                <h2 class="group-title">Tools & Editors</h2>
-                <span class="skill-count">4 skills</span>
-            </div>
-            <p class="group-desc">My daily development environment and workflow tools.</p>
-            <div class="skill-items">
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/tools_and_editors/vs_code.png" alt="vs code" class="vs_logo "></span>
-                    <span class="skill-name">VS Code</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/tools_and_editors/Zed_Editor_Logo.png" alt="zed" class="zed_logo"></span>
-                    <span class="skill-name">Zed</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/tools_and_editors/git.svg" alt="git" class="git_logo"></span>
-                    <span class="skill-name">Git</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/tools_and_editors/gh-logo.png" alt="Github" class="github_logo"></span>
-                    <span class="skill-name">GitHub</span>
-                </div>
-            </div>
+      <!-- Tools & Editors: real files from assets/tools_and_editors/ -->
+      <div class="skill-group">
+        <div class="skill-group-name">Tools & Editors</div>
+        <div class="skill-list">
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/tools_and_editors/git.svg" alt="Git"></div>Git
+          </div>
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/tools_and_editors/gh-logo.png" alt="GitHub"></div>GitHub
+          </div>
+          <div class="skill-item mid">
+            <div class="skill-icon"><img src="assets/tools_and_editors/vs_code.png" alt="VS Code"></div>VS Code
+          </div>
+          <div class="skill-item mid">
+            <div class="skill-icon"><img src="assets/tools_and_editors/Zed_Editor_Logo.png" alt="Zed"></div>Zed Editor
+          </div>
         </div>
+      </div>
 
-        <!-- Group 3: Cloud & Platform -->
-        <div class="skill-group">
-            <div class="group-header">
-                <h2 class="group-title">Cloud & Platform</h2>
-                <span class="skill-count">2 skills</span>
-            </div>
-            <p class="group-desc">Platforms I deploy and operate on.</p>
-            <div class="skill-items">
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/cloud_and_platforms/azure-logo.svg" alt="azure" class="az-logo"></span>
-                    <span class="skill-name">Azure</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon"><img src="assets/cloud_and_platforms/linux.png" alt="linux" class="linux_logo"></span>
-                    <span class="skill-name">Linux</span>
-                </div>
-            </div>
+      <!-- Systems & Cloud: assets/cloud_and_platforms/ -->
+      <div class="skill-group">
+        <div class="skill-group-name">Systems & Cloud</div>
+        <div class="skill-list">
+          <div class="skill-item strong">
+            <div class="skill-icon"><img src="assets/cloud_and_platforms/linux.png" alt="Linux"></div>Linux
+          </div>
+          <div class="skill-item mid">
+            <div class="skill-icon"><img src="assets/cloud_and_platforms/azure-logo.svg" alt="Azure"></div>Azure (basics)
+          </div>
+          <div class="skill-item strong">
+            <div class="skill-icon skill-icon--text">MKF</div>Makefile
+          </div>
+          <div class="skill-item mid">
+            <div class="skill-icon skill-icon--text">CLI</div>CLI design
+          </div>
         </div>
+      </div>
+
+      <!-- CS Fundamentals -->
+      <div class="skill-group">
+        <div class="skill-group-name">CS Fundamentals</div>
+        <div class="skill-list">
+          <div class="skill-item strong"><div class="skill-dot"></div>Data Structures</div>
+          <div class="skill-item strong"><div class="skill-dot"></div>Algorithms</div>
+          <div class="skill-item strong"><div class="skill-dot"></div>File I/O & CRUD</div>
+          <div class="skill-item mid"><div class="skill-dot"></div>Networking basics</div>
+          <div class="skill-item mid"><div class="skill-dot"></div>Modular programming</div>
+          <div class="skill-item mid"><div class="skill-dot"></div>Memory & pointers</div>
+        </div>
+      </div>
 
     </div>
+    <p class="skills-legend fade-in">
+      <span class="legend-strong">●</span> comfortable &nbsp;&nbsp;
+      <span class="legend-mid">●</span> familiar / learning
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════ JOURNEY ═══════════════ -->
+<section id="journey">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">04 — journey</div>
+      <h2 class="section-title">How I got here</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="timeline fade-in">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-title">Started CS — properly</div>
+        <p class="timeline-desc">Enrolled in B.Tech CSE at Techno India University, West Bengal. C was the first language that made things click — memory, pointers, control flow.</p>
+        <div class="timeline-tags">
+          <span class="tag">C</span><span class="tag">fundamentals</span><span class="tag">data structures</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Early 2025</div>
+        <div class="timeline-title">Started learning in public</div>
+        <p class="timeline-desc">Stopped keeping everything local. Started documenting what I build, break, and learn on LinkedIn and X. Based in Kolkata, building in public from day one.</p>
+        <div class="timeline-tags">
+          <span class="tag">LinkedIn</span><span class="tag">X / Twitter</span><span class="tag">public learning</span><span class="tag">Kolkata</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Mid 2025</div>
+        <div class="timeline-title">Built RentDB — first real-world tool</div>
+        <p class="timeline-desc">Built a CLI rent management system in C to solve an actual problem. Learned file handling, CSV export, Makefile builds, and Linux filesystem quirks the hard way.</p>
+        <div class="timeline-tags">
+          <span class="tag">C</span><span class="tag">Linux</span><span class="tag">CLI</span><span class="tag">Makefile</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Late 2025</div>
+        <div class="timeline-title">Found bug bounty & web security</div>
+        <p class="timeline-desc">Started reading HackerOne reports. Learned how web applications work before trying to break them. Switched to Caido for traffic interception and analysis.</p>
+        <div class="timeline-tags">
+          <span class="tag">web security</span><span class="tag">Caido</span><span class="tag">XSS</span><span class="tag">IDOR</span>
+        </div>
+      </div>
+
+      <div class="timeline-item active">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Now</div>
+        <div class="timeline-title">Building in public, looking for what's next</div>
+        <p class="timeline-desc">Learning JavaScript deeply, working through C DSA, exploring GSoC, and doing bug bounty research on the side. Open to internships, collaborations, or anything real.</p>
+        <div class="timeline-tags">
+          <span class="tag" style="border-color:rgba(200,255,0,.2);color:#8ab300">available</span>
+          <span class="tag">JavaScript</span><span class="tag">C</span><span class="tag">GSoC</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 
-<!-- Footer Section -->
-<footer class="footer" id="contact">
 
-    <div class="footer-container">
-
-        <p class="footer-label">&gt; CONTACT.EXE</p>
-
-        <h2 class="footer-title">Get In Touch</h2>
-
-        <p class="footer-desc">Open to collaborations, open source, and conversations.</p>
-
-        <div class="footer-links">
-
-             <a href="https://www.linkedin.com/in/roshan-mallick-2b816a2b8/" target="_blank" class="footer-link">
-                <img src="assets/contact/linkedin.png" alt="LinkedIn" class="contact-icon">
-                  <span>LinkedIn - Roshan Mallick</span>
-             </a>
-
-            <a href="mailto:roshanmallick2025@gmail.com" class="footer-link">
-              <img src="assets/contact/gmail.png" alt="Email" class="contact-icon">
-               <span>roshanmallick2025@gmail.com</span>
-            </a>
-
-            <a href="https://github.com/Roshan-Mallick" target="_blank" class="footer-link">
-               <img src="assets/contact/gh-logo.png" alt="GitHub" class="contact-icon">
-                <span>github.com/Roshan-Mallick</span>
-            </a>
-
-            <a href="https://x.com/_eth0x1" target="_blank" class="footer-link">
-                <img src="assets/contact/x.png" alt="X" class="contact-icon">
-                  <span>X(twitter) - Roshan Mallick</span>
-             </a>
-
-        </div>
-
-        <p class="footer-copy">© 2026 Roshan Mallick. Built from scratch.</p>
-
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">05 — contact</div>
+      <h2 class="section-title">Let's talk</h2>
+      <div class="divider"></div>
     </div>
+    <div class="contact-inner fade-in">
+      <p>If you're working on something interesting, want to discuss security research, open-source, or just want to connect — I'm reachable.</p>
+      <div class="contact-links">
+        <a href="https://github.com/Roshan-Mallick" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/roshan-mallick-2b816a2b8/" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://x.com/_eth0x1" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          X / Twitter
+        </a>
+        <a href="mailto:roshanmallick2025@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+      <p class="email-raw">or directly at <a href="mailto:roshanmallick2025@gmail.com">roshanmallick2025@gmail.com</a></p>
+    </div>
+  </div>
+</section>
 
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <p>Built by Roshan Mallick · 2025 · <a href="https://github.com/Roshan-Mallick" target="_blank">Roshan-Mallick</a></p>
 </footer>
 
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
-
